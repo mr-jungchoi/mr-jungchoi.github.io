@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Foodology: Sign in</title>
+  <title>Foodology: Login</title>
 </head>
 <body>
-  <h1>Foodology: Sign in to your account</h1>
+  <h1>Foodology: Login</h1>
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -12,11 +13,42 @@
       <li><a href="articles.html">Articles</a></li>
       <li><a href="meal-ideas.html">Meal Ideas</a></li>
       <li><a href="profile.html">Profile</a></li>
-      <li><a href="sign-in.html">Sign In</a></li>
+      <li><a href="sign-in.html">Login</a></li>
     </ul>
   </nav>
-  <form>
 
+  <form action="https://httpbin.org/post" method="post">
+    <fieldset>
+      <legend> Sign In </legend>
+      <div>
+        <label>Email:</label>
+        <input type="email" name="email">
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="password">
+      </div>
+      <button type="submit"> Login </button>
+    </fieldset>
+  </form>
+
+  <form action="https://httpbin.org/post" method="post">
+    <fieldset>
+      <legend> Sign Up </legend>
+      <div>
+        <label>Email:</label>
+        <input type="email" name="email">
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="password">
+      </div>
+      <div>
+        <label>Confirm Password:</label>
+        <input type="password" name="password">
+      </div>
+      <button type="submit"> Creat Your Account </button>
+    </fieldset>
   </form>
 </body>
 </html>
