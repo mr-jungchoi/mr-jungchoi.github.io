@@ -4,12 +4,7 @@
 
 body {
   min-width: 600px;
-}
-
-main {
-  max-width: 900px;
-  background: #ffff66 /* #ff6666, #66d9ff, #ffff66 */;
-  padding: 16px 0px;
+  background-color: #ffff66;
 }
 
 nav ul {
@@ -39,4 +34,31 @@ nav a.active {
 nav a:hover {
   background-color: #555;
   color: white;
+}
+
+main {
+  max-width: 900px;
+  background: #05ff8a;
+  padding: 10px;
+}
+
+section {
+  padding: 8px;
+}
+
+section.first img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+div.image p {
+  text-align: center
+}
+
+section#similar-website {
+  margin: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
 }
