@@ -3,7 +3,6 @@
 }
 
 body {
-  min-width: 600px;
   background-color: #ffff66;
 }
 
@@ -17,6 +16,10 @@ nav ul {
 
 nav li {
   float: left;
+}
+
+nav li#login {
+  float: right;
 }
 
 nav a {
@@ -37,7 +40,7 @@ nav a:hover {
 }
 
 main {
-  max-width: 900px;
+  max-width: 800px;
   background: #05ff8a;
   padding: 10px;
 }
@@ -56,9 +59,26 @@ div.image p {
   text-align: center
 }
 
-section#similar-website {
+section.similar-website {
   margin: 2px;
   border-width: 2px;
   border-style: solid;
   border-color: white;
+}
+
+a#similar-website {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+    nav li, nav li#login {
+      float: none;
+    }
+
+    section.first img {
+      width: 100%;
+    }
 }
