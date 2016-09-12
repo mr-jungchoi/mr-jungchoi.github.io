@@ -1,0 +1,42 @@
+* {
+  font-family: "Helvetica"
+}
+
+body {
+  min-width: 600px;
+}
+
+main {
+  max-width: 900px;
+  background: #ffff66 /* #ff6666, #66d9ff, #ffff66 */;
+  padding: 16px 0px;
+}
+
+nav ul {
+  background-color: #f1f1f1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a.active {
+  background-color: #ff6666;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #555;
+  color: white;
+}
